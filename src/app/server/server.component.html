@@ -1,0 +1,8 @@
+
+
+<input type="text" class="form-control" [(ngModel)]='serverName'>
+<button class= 'btn btn-primary'  (click)='createServer()'>Create Server</button>
+
+<p [ngStyle]='{backgroundColor:getColor()}'>{{'Server'}} with Id {{serverId}} is {{getServerStatus() }} </p>
+
+
