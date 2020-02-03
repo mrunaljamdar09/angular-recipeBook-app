@@ -6,11 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
-  username='';
-  serverCreated= false;
-  createServe(){
-  this.serverCreated=true;
+  loadedFeature= 'recipe';
+  // title = 'my-app';
+  // username='';
+  // serverCreated= false;
+  // createServe(){
+  // this.serverCreated=true;
+  // }
+
+  onNavigate(feature:string){
+    this.loadedFeature= feature;
+
   }
 }
 
